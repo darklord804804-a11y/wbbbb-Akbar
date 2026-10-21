@@ -1,0 +1,64 @@
+@import "tailwindcss";
+
+@keyframes popupBackdrop {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes popupContent {
+  0% {
+    opacity: 0;
+    transform: scale(0.92) translateY(18px);
+  }
+  60% {
+    opacity: 1;
+    transform: scale(1.01) translateY(-2px);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+}
+
+@keyframes dropdownPopup {
+  0% {
+    opacity: 0;
+    transform: scale(0.95) translateY(-8px);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+}
+
+@keyframes floatBadge {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+}
+
+.animate-popup-backdrop {
+  animation: popupBackdrop 0.24s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+.animate-popup-content {
+  animation: popupContent 0.34s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+  will-change: transform, opacity;
+}
+
+.animate-dropdown-popup {
+  animation: dropdownPopup 0.2s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+  transform-origin: top;
+  will-change: transform, opacity;
+}
+
+.animate-float-badge {
+  animation: floatBadge 3.5s ease-in-out infinite;
+}

@@ -1,0 +1,6 @@
+{
+  "name": "Akbar Study Smart Academy",
+  "description": "Comprehensive FBISE Classes 9-12 and university entry test preparation platform featuring exam-focused notes, MCQs, video lectures, test series, guess papers, and official board updates.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

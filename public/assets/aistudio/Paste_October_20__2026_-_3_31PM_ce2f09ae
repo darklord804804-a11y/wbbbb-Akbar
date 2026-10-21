@@ -1,0 +1,1733 @@
+MASTER PROMPT: BUILD A COMPLETE, PROFESSIONAL EDUCATIONAL WEBSITE FOR AKBAR STUDY SMART ACADEMY
+
+# MASTER PROMPT: BUILD A COMPLETE, PROFESSIONAL EDUCATIONAL WEBSITE FOR AKBAR STUDY SMART ACADEMY
+
+Act as a senior full-stack developer, premium UI/UX designer, educational platform architect, and responsive web application specialist. Build a complete, modern, production-ready educational website for **Akbar Study Smart Academy**, using the uploaded academy logo as the official brand asset and the client's requirements below.
+
+The website must be visually impressive, student-friendly, trustworthy, easy to navigate, fully responsive, and suitable for deployment on Hostinger. It should look like a real educational platform built for Pakistani students preparing for FBISE examinations, rather than a generic school website.
+
+Do not merely describe the website or generate a static mockup. Build the complete working project, including the frontend, reusable components, page layouts, responsive styling, working navigation, functional forms, educational content sections, and appropriate backend integration points.
+
+## 1. PROJECT OVERVIEW
+
+**Website name:** Akbar Study Smart Academy
+
+**Brand identity:** An educational platform helping Pakistani students prepare for board examinations through online learning, study materials, MCQs, notes, guess papers, past papers, test series, lectures, official notifications, and entry-test preparation.
+
+**Primary audience:**
+
+* FBISE Class 9 students.
+
+* FBISE Class 10 students.
+
+* FBISE Class 11 students.
+
+* FBISE Class 12 students.
+
+* Students preparing for university entry tests.
+
+* Students searching for university admissions, merit lists, and academic updates.
+
+* Parents and teachers looking for reliable educational resources.
+
+**Primary goal:** Help students quickly find the correct class, subject, lecture, study material, test, examination update, or registration form.
+
+**Secondary goals:**
+
+* Increase student registrations.
+
+* Grow the academy's online learning community.
+
+* Direct students to official social media platforms.
+
+* Make educational resources easy to access.
+
+* Establish a professional and trustworthy educational brand.
+
+* Make it easy for the academy administrator to publish new content and announcements.
+
+All website content should use clear, accessible English, with an architecture that can support Urdu content in the future.
+
+## 2. BRANDING AND LOGO INTEGRATION
+
+Use the uploaded Akbar Study Smart Academy logo as the primary brand identity.
+
+The logo features a blue graduation cap, an open book, blue and orange decorative elements, the word “AKBAR,” and a gold banner containing “STUDY SMART ACADEMY.”
+
+### Logo requirements
+
+* Use the exact uploaded logo without recreating it unnecessarily.
+
+* Preserve its proportions and original appearance.
+
+* Avoid stretching, cropping, or placing text over it.
+
+* Use a clean white background behind the logo when necessary.
+
+* Create a smaller, appropriately scaled header version.
+
+* Create a favicon from a simplified, recognizable portion of the logo if possible.
+
+* Use the complete logo in the footer and on suitable branding sections.
+
+* Store the original image in the project's local assets folder.
+
+* Optimize the image for web performance without noticeably reducing quality.
+
+If the logo background needs to be removed for a transparent version, do so only if the result retains clean edges and does not damage the original artwork. Keep the original file as a backup.
+
+## 3. DESIGN DIRECTION AND COLOR PALETTE
+
+Create a premium academic design inspired by the uploaded logo and the layout principles of a professional university website.
+
+The visual style should combine:
+
+* A clean white interface.
+
+* Deep academic blue.
+
+* Warm gold and orange accents.
+
+* Modern educational illustrations and authentic student photography.
+
+* Organized content cards.
+
+* Strong typography and section hierarchy.
+
+* Comfortable spacing.
+
+* Clear calls to action.
+
+* A professional dark-blue footer.
+
+Avoid excessive gradients, overdecorated cards, excessive animation, and cluttered layouts.
+
+### Recommended color palette
+
+* Primary academic blue: `#123B70`
+
+* Deep navy: `#0B2348`
+
+* Secondary blue: `#2166A5`
+
+* Bright academic blue: `#2F80C3`
+
+* Gold: `#F2B632`
+
+* Orange: `#E88724`
+
+* Pale blue background: `#F1F6FC`
+
+* Light gold background: `#FFF8E8`
+
+* White: `#FFFFFF`
+
+* Main text: `#172235`
+
+* Secondary text: `#637083`
+
+* Border: `#E0E7EF`
+
+* Success: `#21865B`
+
+* Error: `#C0392B`
+
+Use blue as the dominant brand color. Gold and orange should highlight important actions, badges, exam announcements, and selected visual details.
+
+### Typography
+
+Use Inter, Poppins, or a similar modern sans-serif font.
+
+Recommended hierarchy:
+
+* Main hero heading: 40–56px on desktop.
+
+* Page headings: 30–40px.
+
+* Section headings: 25–32px.
+
+* Card headings: 17–21px.
+
+* Body text: 14–17px.
+
+* Navigation: 13–15px.
+
+* Supporting labels: 12–14px.
+
+On mobile, scale headings down appropriately and maintain comfortable line spacing.
+
+Use consistent button sizes, corner radii, icon styles, and spacing throughout the site.
+
+## 4. HEADER AND NAVIGATION
+
+Create a professional, responsive header with a white background, subtle bottom border, and compact spacing.
+
+### Desktop header
+
+Left:
+
+* Academy logo.
+
+* Optional compact wordmark “Akbar Study Smart Academy” if the complete logo is too wide.
+
+Right:
+
+* Home
+
+* Academy / Registration
+
+* Classes
+
+* University Portal
+
+* Test Series
+
+* Notes
+
+* Guess Papers
+
+* Past Papers
+
+* Updates
+
+* Entry Test
+
+* Merit List
+
+Because there are many navigation items, organize them into dropdown menus instead of allowing the header to become crowded.
+
+Suggested navigation grouping:
+
+**Home**
+
+**Academy**
+
+* About the Academy
+
+* Registration Form
+
+* Contact Us
+
+**Classes**
+
+* Class 9
+
+* Class 10
+
+* Class 11
+
+* Class 12
+
+* Lectures
+
+**Study Resources**
+
+* Notes
+
+* MCQs
+
+* Guess Papers
+
+* Past Papers
+
+* Paper Patterns
+
+* Marking Schemes
+
+**University Portal**
+
+* University Admissions
+
+* Entry Test Preparation
+
+* Merit Lists
+
+* Admission Updates
+
+**Test Series**
+
+**Official Updates**
+
+Add a gold-accented “Register Now” CTA.
+
+### Navigation functionality
+
+* Every link must navigate to an actual page, section, or implemented content view.
+
+* Dropdowns must work using mouse, keyboard, and touch.
+
+* Use appropriate active states.
+
+* Add a visible focus state for keyboard users.
+
+* Keep navigation consistent across all pages.
+
+* Do not use dead links or placeholder `#` links.
+
+### Mobile header
+
+* Show a compact logo on the left.
+
+* Place a menu button on the right.
+
+* Open a clean mobile navigation drawer or dropdown.
+
+* Use expandable groups for Classes, Study Resources, and University Portal.
+
+* Keep Register Now visible and easy to reach.
+
+* Close the menu after selecting a destination.
+
+* Prevent the menu from covering important content in an inaccessible way.
+
+## 5. HOMEPAGE HERO SECTION
+
+Create a strong, conversion-focused hero section directly beneath the header.
+
+Use a two-column desktop layout.
+
+### Left column
+
+Small eyebrow:
+“WELCOME TO AKBAR STUDY SMART ACADEMY”
+
+Main headline:
+
+**“Study Smart. Prepare Better. Achieve More.”**
+
+Supporting description:
+
+“Your learning partner for FBISE Class 9, 10, 11, and 12. Explore expert-guided lectures, exam-focused notes, MCQs, test series, past papers, and important academic updates—all in one place.”
+
+Primary CTA:
+**Explore Study Resources**
+
+Secondary CTA:
+**Register Now**
+
+Add three small trust indicators below the buttons:
+
+* Classes 9–12
+
+* Exam-Focused Resources
+
+* Online Learning Support
+
+Do not display fabricated student counts, pass percentages, or teacher credentials.
+
+### Right column
+
+Use the uploaded logo as a prominent brand element, accompanied by a visually engaging educational composition containing:
+
+* An open book.
+
+* A graduation cap.
+
+* Neatly arranged notebooks.
+
+* Study materials.
+
+* Subtle gold and blue geometric accents.
+
+* Optional authentic photography of students studying.
+
+Prefer a custom, original educational illustration or carefully selected high-quality photograph. Do not duplicate the logo artwork or create a second competing logo.
+
+Use a pale blue background with restrained gold decorative elements.
+
+### Hero design
+
+* Use generous whitespace.
+
+* Maintain clear text contrast.
+
+* Make the main heading the most prominent element.
+
+* Use blue for primary text and gold for small highlights.
+
+* Give buttons comfortable padding and consistent corner radii.
+
+* Avoid large decorative effects that interfere with readability.
+
+### Hero responsive behavior
+
+On desktop, use two columns.
+
+On tablets, reduce spacing and balance the columns.
+
+On mobile, stack the content vertically, place the text first, and scale the educational illustration appropriately. Make both CTA buttons easy to tap.
+
+## 6. QUICK ACCESS DASHBOARD
+
+Immediately below the hero, create a quick-access section titled:
+
+**“What Do You Want to Study Today?”**
+
+Display eight compact icon cards:
+
+1. Class 9
+
+2. Class 10
+
+3. Class 11
+
+4. Class 12
+
+5. Video Lectures
+
+6. Notes & MCQs
+
+7. Test Series
+
+8. Past Papers
+
+Each card should include:
+
+* A professional educational icon.
+
+* A concise title.
+
+* A subtle arrow.
+
+* A clear clickable area.
+
+Use white cards on a pale blue background with thin borders and subtle hover effects.
+
+Desktop: four columns or eight compact columns where space permits.
+
+Tablet: three or four columns.
+
+Mobile: two columns.
+
+Every card must lead to the corresponding class or resource section.
+
+## 7. ABOUT THE ACADEMY SECTION
+
+Create an informative section titled:
+
+**“About Akbar Study Smart Academy”**
+
+Use the following polished version of the client's description:
+
+“Akbar Study Smart Academy is an educational platform dedicated to helping students achieve their academic goals. We provide exam-focused study materials, online learning resources, subject explanations, practice tests, and academic updates to support students throughout their preparation.
+
+Our goal is to make learning more accessible, understandable, and organized. Through structured resources and regular practice, we encourage students to build confidence, strengthen their understanding, and prepare for their future opportunities.
+
+Whether you are studying in Class 9, 10, 11, or 12, preparing for FBISE examinations, or exploring university entry tests, our platform helps you find relevant educational resources in one convenient place.”
+
+Use a two-column layout:
+
+* Left: the description and a “Explore Our Resources” CTA.
+
+* Right: an authentic education-themed image or an original illustration showing students learning.
+
+Add three small feature highlights:
+
+* Organized Study Materials
+
+* Exam-Focused Practice
+
+* Academic Updates
+
+Do not claim official government recognition, FBISE affiliation, accreditation, or guaranteed exam results unless the client provides verifiable evidence.
+
+If the word “Official” is used in the brand description, treat it as the client's preferred wording rather than proof of formal authorization.
+
+## 8. CLASSES SECTION
+
+Create a major section titled:
+
+**“Explore Classes 9–12”**
+
+Subtitle:
+“Find subject resources, lectures, notes, and practice materials for your class.”
+
+Build four large class cards.
+
+### Class 9
+
+Description:
+“Build strong foundations with subject-wise notes, important MCQs, chapter summaries, and examination practice.”
+
+Links:
+
+* View Subjects
+
+* Watch Lectures
+
+* Download Notes
+
+* Practice MCQs
+
+### Class 10
+
+Description:
+“Prepare for board examinations with focused revision materials, past papers, guess papers, and topic-based practice.”
+
+Links:
+
+* View Subjects
+
+* Watch Lectures
+
+* Download Notes
+
+* Practice MCQs
+
+### Class 11
+
+Description:
+“Strengthen your concepts with detailed subject resources, lecture materials, and structured exam preparation.”
+
+Links:
+
+* View Subjects
+
+* Watch Lectures
+
+* Download Notes
+
+* Practice MCQs
+
+### Class 12
+
+Description:
+“Revise important topics, practice examination questions, and prepare for board exams and future academic opportunities.”
+
+Links:
+
+* View Subjects
+
+* Watch Lectures
+
+* Download Notes
+
+* Practice MCQs
+
+### Card design
+
+Each card should include:
+
+* A class number badge.
+
+* A subject or textbook-themed illustration.
+
+* A clear title.
+
+* A concise description.
+
+* Resource links.
+
+* A primary CTA labeled “Explore Class.”
+
+Use blue as the main accent and gold for important details.
+
+Make the class cards reusable, and store their content in a data file rather than duplicating markup.
+
+### Class detail pages
+
+Each class must have a dedicated content view with:
+
+* Class overview.
+
+* Available subjects.
+
+* Chapter lists.
+
+* Lecture links.
+
+* Notes and downloadable files.
+
+* MCQ practice.
+
+* Guess papers.
+
+* Past papers.
+
+* Relevant exam updates.
+
+Allow the administrator to add or update subjects and resources without redesigning the entire website.
+
+Do not fabricate downloadable PDFs. If actual materials have not been provided, build a clean resource-management structure and show an honest message that content will be published when available.
+
+## 9. LECTURES AND ONLINE LEARNING
+
+Create a section titled:
+
+**“Learn Through Video Lectures”**
+
+Description:
+“Revisit difficult concepts, study at your own pace, and strengthen your understanding with subject-focused video lessons.”
+
+Create lecture cards containing:
+
+* Thumbnail image.
+
+* Class.
+
+* Subject.
+
+* Chapter or topic.
+
+* Teacher name only when supplied.
+
+* Duration only when verified.
+
+* Watch Lecture button.
+
+Use actual video embeds or links to the academy's YouTube channel when relevant.
+
+Official YouTube channel:
+[https://youtube.com/@akbarstudysmartacademy?si=3gcJ0zBQJgjN6ZDf](https://youtube.com/@akbarstudysmartacademy?si=3gcJ0zBQJgjN6ZDf)
+
+Create a clear “Visit Our YouTube Channel” CTA.
+
+If the client has not provided individual lesson links, do not invent video IDs or pretend videos are available. Display the channel link and provide a reusable data structure for adding verified lectures later.
+
+## 10. TEST SERIES AND MCQ PRACTICE
+
+Create a prominent section titled:
+
+**“Practice. Test Yourself. Improve.”**
+
+Include test cards for:
+
+* Class 9 MCQs.
+
+* Class 10 MCQs.
+
+* Class 11 MCQs.
+
+* Class 12 MCQs.
+
+* Chapter-wise Tests.
+
+* Full-Length Practice Tests.
+
+Each card should display:
+
+* Test title.
+
+* Class and subject.
+
+* Number of questions only when configured.
+
+* Estimated duration only when configured.
+
+* Difficulty label where appropriate.
+
+* Start Test CTA.
+
+### Functional test experience
+
+Implement a working multiple-choice test interface.
+
+Requirements:
+
+* Display one question at a time or a clearly organized question list.
+
+* Show answer options with accessible radio controls.
+
+* Allow users to move between questions.
+
+* Display progress.
+
+* Support previous and next navigation.
+
+* Allow users to review answers before submission.
+
+* Calculate scores using a configured answer key.
+
+* Display the final score and correct-answer review.
+
+* Provide a restart option.
+
+* Handle unanswered questions correctly.
+
+* Work on mobile screens.
+
+* Prevent accidental loss of answers during ordinary navigation within the test.
+
+Use original demonstration questions only where needed to verify functionality, clearly identify them as sample content, and make them easy to replace with academy-approved questions.
+
+Do not invent official board exam questions or claim that sample tests are official FBISE papers.
+
+If no database exists, use local state for the initial demo and document that production test results require suitable persistent storage.
+
+## 11. NOTES AND STUDY MATERIALS
+
+Create a resource library titled:
+
+**“Notes & Study Materials”**
+
+Include filters for:
+
+* Class 9.
+
+* Class 10.
+
+* Class 11.
+
+* Class 12.
+
+Include additional filters for:
+
+* Subject.
+
+* Chapter.
+
+* Resource type.
+
+Supported resource types:
+
+* Chapter Notes.
+
+* Short Questions.
+
+* Long Questions.
+
+* Important MCQs.
+
+* Solved Exercises.
+
+* Revision Sheets.
+
+* Formula Sheets.
+
+* Paper Patterns.
+
+* Marking Schemes.
+
+Each resource card should include:
+
+* Title.
+
+* Class.
+
+* Subject.
+
+* Chapter or topic.
+
+* Resource type.
+
+* Available format.
+
+* View or Download action.
+
+Implement functional filtering and searching.
+
+Allow PDF resources to open in an appropriate viewer or download through a valid file URL.
+
+Use clear loading, empty, and error states.
+
+Never display fake download buttons that lead nowhere.
+
+If actual documents have not been provided, create the complete library interface with empty-state messaging such as:
+
+“No resources are available for this selection yet. Please check back for upcoming study materials.”
+
+Keep all content configurable through a centralized data file or content management backend.
+
+## 12. GUESS PAPERS AND IMPORTANT QUESTIONS
+
+Create a dedicated page titled:
+
+**“Guess Papers & Important Questions”**
+
+Subtitle:
+“Focus your revision with organized practice materials and high-priority topics.”
+
+Organize resources by:
+
+* Class.
+
+* Subject.
+
+* Examination year.
+
+* Resource format.
+
+Each card should show:
+
+* Class and subject.
+
+* Paper title.
+
+* Academic year.
+
+* Available format.
+
+* View Paper or Download Paper CTA.
+
+Add a visible notice:
+
+“Guess papers and important questions are provided for revision and practice. They do not guarantee the questions that will appear in an examination.”
+
+Avoid claims such as “100% confirmed paper,” “guaranteed board questions,” or “leaked exam paper.”
+
+Only publish files that the academy has permission to distribute.
+
+## 13. PAST PAPERS AND PAPER PATTERNS
+
+Create a page titled:
+
+**“Past Papers & Paper Patterns”**
+
+Provide filtering by:
+
+* Class 9, 10, 11, and 12.
+
+* Subject.
+
+* Examination year.
+
+* Annual or supplementary examination where applicable.
+
+* Resource format.
+
+Include:
+
+* Previous examination papers.
+
+* Model papers.
+
+* Sample papers.
+
+* Paper patterns.
+
+* Marking schemes.
+
+* Solved papers, when available.
+
+Each resource must have a real file or source link.
+
+If official board materials are linked, clearly label the source and direct students to the appropriate authoritative source where possible.
+
+Do not falsely label internally prepared materials as official board documents.
+
+Make it easy for administrators to add new years, subjects, and paper files.
+
+## 14. UNIVERSITY PORTAL
+
+Create a dedicated section titled:
+
+**“University Admissions & Student Portal”**
+
+Subtitle:
+“Explore higher education opportunities and find useful university admission information.”
+
+Include four main cards:
+
+1. **University Admissions**
+
+   * Admission announcements.
+
+   * Application deadlines.
+
+   * Eligibility requirements.
+
+   * Official university application links.
+2. **Entry Test Preparation**
+
+   * Practice MCQs.
+
+   * Subject-wise preparation.
+
+   * Study plans.
+
+   * Verified test information.
+3. **Merit Lists**
+
+   * University name.
+
+   * Program.
+
+   * Admission cycle.
+
+   * Published merit-list link.
+
+   * Publication date when available.
+4. **Admission Updates**
+
+   * Application opening dates.
+
+   * Deadline reminders.
+
+   * Eligibility changes.
+
+   * Official admission notices.
+
+### Portal functionality
+
+Implement:
+
+* Search by university.
+
+* Filter by program or study field where data is available.
+
+* Filter by admission status when the status has been verified.
+
+* Direct links to official university pages.
+
+* A clearly displayed publication or verification date.
+
+* Helpful empty states when no current information exists.
+
+Do not invent university admission deadlines, closing merits, entry-test dates, or application statuses.
+
+Clearly distinguish academy-published information from information sourced from official universities.
+
+If the term “University Portal” refers to an actual student login system, build a login-ready architecture but do not simulate a secure portal without authentication and a backend. For the initial public website, implement a university information and resources portal.
+
+## 15. OFFICIAL UPDATES AND NOTIFICATIONS
+
+Create a page titled:
+
+**“Latest Educational Updates & Notifications”**
+
+Use a clean announcement feed with a featured announcement at the top.
+
+Categories:
+
+* FBISE Announcements.
+
+* Date Sheets.
+
+* Examination Notifications.
+
+* Results.
+
+* Registration and Admission.
+
+* Paper Patterns.
+
+* Syllabus Updates.
+
+* University Admissions.
+
+* Entry Tests.
+
+* Merit Lists.
+
+Each announcement should contain:
+
+* Headline.
+
+* Category.
+
+* Publication date.
+
+* Short summary.
+
+* Source.
+
+* Official source link when available.
+
+* Verification status.
+
+Use a gold-accented “Important Update” badge for verified high-priority announcements.
+
+Include search and category filters.
+
+### Content accuracy requirements
+
+Never invent current notifications or present unverified information as official.
+
+If no live news API or content management system is connected, use administrator-managed announcements and clearly distinguish sample content from verified updates.
+
+Make it possible to mark an announcement as:
+
+* Draft.
+
+* Published.
+
+* Archived.
+
+* Verified.
+
+* Pending verification.
+
+Only published announcements should be visible publicly, and verification labels must reflect the actual status.
+
+Add a “View Original Source” link whenever an announcement references an external official source.
+
+## 16. ENTRY TEST PREPARATION
+
+Create a dedicated page titled:
+
+**“Prepare for University Entry Tests”**
+
+Description:
+“Build confidence through structured revision, concept-based practice, and organized preparation resources.”
+
+Include configurable preparation categories such as:
+
+* Mathematics.
+
+* Physics.
+
+* Chemistry.
+
+* Biology.
+
+* English.
+
+* Analytical Reasoning.
+
+* Computer Science.
+
+These subjects should be displayed according to the student's chosen test and the verified requirements of that test.
+
+Add:
+
+* Subject-based practice tests.
+
+* Topic-wise MCQs.
+
+* Study resources.
+
+* Revision checklists.
+
+* Test format information.
+
+* Links to official test-provider guidance.
+
+* Admission deadline links when verified.
+
+Do not assume that every test requires the same subjects. Let the administrator configure subject lists and resource requirements for each test.
+
+Include a CTA:
+**“Explore Entry Test Resources”**
+
+## 17. MERIT LISTS AND RESULTS INFORMATION
+
+Create a dedicated page titled:
+
+**“Merit Lists & Admission Results”**
+
+Provide a searchable directory organized by:
+
+* University.
+
+* Program.
+
+* Admission cycle.
+
+* Academic year.
+
+* Publication date.
+
+Each entry should include:
+
+* University or institution.
+
+* Program name.
+
+* Merit-list title.
+
+* Published date, if known.
+
+* Source verification status.
+
+* Official link to the list.
+
+Where the university provides official PDFs or result pages, link directly to those sources.
+
+Do not generate fake student names, roll numbers, marks, or merit positions.
+
+If no merit list is available, show:
+
+“No verified merit lists are currently available for this selection. Please check the university's official admission website for the latest information.”
+
+Do not build a login form asking for sensitive student information unless a legitimate, secure, and authorized result service is implemented.
+
+## 18. ACADEMY REGISTRATION FORM
+
+Create a dedicated registration page with the heading:
+
+**“Join Akbar Study Smart Academy”**
+
+Supporting text:
+“Register to receive information about learning resources, online classes, test series, and educational updates.”
+
+Create a professional form with the following fields:
+
+* Full Name — required.
+
+* Email Address — optional unless required by the actual enrollment workflow.
+
+* Mobile Number — required.
+
+* Class — required dropdown: Class 9, Class 10, Class 11, Class 12.
+
+* Board — configurable dropdown with FBISE as an option.
+
+* Subject or Study Group — configurable based on the selected class.
+
+* City — optional.
+
+* Preferred Learning Method — Online, Self-Study Resources, or Other.
+
+* Areas of Interest — checkboxes for Notes, Lectures, MCQs, Test Series, and Exam Updates.
+
+* Additional Message — optional.
+
+* Consent checkbox — required before submitting personal data.
+
+Button:
+**“Submit Registration”**
+
+Add a clear privacy notice explaining how submitted information will be used.
+
+### Registration form behavior
+
+* Validate all required fields.
+
+* Validate mobile and email formats appropriately.
+
+* Display clear field-level error messages.
+
+* Prevent repeated submissions while a request is processing.
+
+* Show a confirmation message only after a successful backend response.
+
+* Provide an accessible error message when submission fails.
+
+* Do not falsely claim a registration has been saved if no backend exists.
+
+* Never expose database credentials in frontend code.
+
+### Backend integration
+
+Build a clean API integration point for a secure registration endpoint.
+
+If a backend is not configured:
+
+* Allow local form validation.
+
+* Clearly explain in the project README how to connect a backend.
+
+* Do not pretend the data has been stored permanently.
+
+* Do not place personal registration data in public files or expose it to other users.
+
+For production, support a suitable backend database or trusted form service, secure validation, spam protection, and access controls.
+
+## 19. CONTACT AND SOCIAL MEDIA SECTION
+
+Create a prominent section titled:
+
+**“Connect with Akbar Study Smart Academy”**
+
+Supporting text:
+
+“Stay connected with us and never miss educational updates, notes, guess papers, MCQs, revision lessons, online classes, results information, and more.”
+
+Use the following official platform links supplied by the client.
+
+### WhatsApp Channel
+
+[https://whatsapp.com/channel/0029VbAMQxi7j6g2ycJ2jE09](https://whatsapp.com/channel/0029VbAMQxi7j6g2ycJ2jE09)
+
+Label:
+“Join Our WhatsApp Channel”
+
+### YouTube Channel
+
+[https://youtube.com/@akbarstudysmartacademy?si=3gcJ0zBQJgjN6ZDf](https://youtube.com/@akbarstudysmartacademy?si=3gcJ0zBQJgjN6ZDf)
+
+Label:
+“Watch Our YouTube Lessons”
+
+### Instagram
+
+[https://www.instagram.com/akbar_study_smart_academy?igsh=MTQ1N2doZjJ2Mnk3YQ==](https://www.instagram.com/akbar_study_smart_academy?igsh=MTQ1N2doZjJ2Mnk3YQ==)
+
+Label:
+“Follow on Instagram”
+
+### Facebook
+
+[https://www.facebook.com/share/18MpitdX3e/](https://www.facebook.com/share/18MpitdX3e/)
+
+Label:
+“Visit Our Facebook Page”
+
+### TikTok
+
+[https://vt.tiktok.com/ZSCLLLBwM/](https://vt.tiktok.com/ZSCLLLBwM/)
+
+Label:
+“Follow on TikTok”
+
+### Contact numbers
+
+The client provided two contact-number entries:
+
+* `032222222222`
+
+* `032222222222222`
+
+Treat these as unverified until confirmed. Do not silently publish potentially incorrect numbers. Put them in a centralized configuration file and clearly mark them for verification before launch.
+
+Format verified Pakistani numbers for readability and use appropriate `tel:` links.
+
+### Social link behavior
+
+* Open external social links in a new tab where appropriate.
+
+* Use safe external-link attributes such as `rel="noopener noreferrer"`.
+
+* Include recognizable icons and accessible labels.
+
+* Make the full card or CTA clickable.
+
+* Do not embed social feeds unless the service supports it reliably.
+
+## 20. NEWSLETTER AND UPDATES SUBSCRIPTION
+
+Create a compact section titled:
+
+**“Never Miss an Important Update”**
+
+Supporting text:
+“Get study resources, important notifications, examination updates, and learning announcements.”
+
+Include:
+
+* Email input.
+
+* Subscribe button.
+
+* Consent text.
+
+* Privacy policy link.
+
+* Accessible success and error messages.
+
+Implement validation and connect the form to a configurable backend or email-marketing provider.
+
+Do not expose API keys in browser code or claim a subscription succeeded without confirmation from the connected service.
+
+If no integration is configured, provide a clear development message and document how to activate the subscription workflow.
+
+## 21. FOOTER
+
+Create a polished, deep-navy footer using the academy's blue and gold identity.
+
+Include four columns on desktop.
+
+### Column 1: Academy branding
+
+* Official uploaded logo.
+
+* Akbar Study Smart Academy.
+
+* Short description:
+  “Helping students prepare smarter with organized learning resources, practice materials, and educational updates.”
+
+### Column 2: Learning
+
+* Class 9.
+
+* Class 10.
+
+* Class 11.
+
+* Class 12.
+
+* Video Lectures.
+
+* Test Series.
+
+### Column 3: Study Resources
+
+* Notes & MCQs.
+
+* Guess Papers.
+
+* Past Papers.
+
+* Paper Patterns.
+
+* Entry Test Preparation.
+
+* Merit Lists.
+
+### Column 4: Connect
+
+* About the Academy.
+
+* Registration.
+
+* Contact Us.
+
+* Official Updates.
+
+* WhatsApp.
+
+* YouTube.
+
+* Instagram.
+
+* Facebook.
+
+* TikTok.
+
+Add a bottom strip containing:
+
+* “© 2026 Akbar Study Smart Academy. All rights reserved.”
+
+* Privacy Policy.
+
+* Terms of Use.
+
+* Disclaimer.
+
+Use white headings, muted light-blue text, gold hover accents, subtle dividers, and accessible contrast.
+
+On mobile, stack footer sections cleanly and avoid excessively long horizontal lists.
+
+## 22. IMPORTANT LEGAL AND CONTENT DISCLAIMERS
+
+Include a concise disclaimer page or section.
+
+Suggested copy:
+
+“Akbar Study Smart Academy provides educational resources to support students' learning and examination preparation. Unless explicitly stated and verified, the platform is independent and does not represent an official examination board, university, or government authority. Students should confirm examination schedules, admissions, merit lists, eligibility requirements, and official notifications through the relevant institution's official channels. Study materials and guess papers are provided for learning and revision and do not guarantee examination results.”
+
+Use this disclaimer to maintain transparency.
+
+Do not invent claims about:
+
+* Official FBISE affiliation.
+
+* Accreditation.
+
+* Guaranteed grades or marks.
+
+* Guaranteed university admissions.
+
+* Guaranteed examination questions.
+
+* Verified teacher qualifications.
+
+* Student success rates.
+
+## 23. ADMINISTRATOR AND CONTENT MANAGEMENT ARCHITECTURE
+
+Design the project so the academy can maintain it as content grows.
+
+Separate content data from UI components.
+
+Create reusable data structures for:
+
+* Classes.
+
+* Subjects.
+
+* Chapters.
+
+* Lectures.
+
+* Notes.
+
+* MCQs.
+
+* Test series.
+
+* Guess papers.
+
+* Past papers.
+
+* Announcements.
+
+* University admission links.
+
+* Merit lists.
+
+* Registration settings.
+
+* Social media links.
+
+If supported by the environment, provide an optional administrator dashboard with secure authentication for managing resources and announcements.
+
+The administrator should eventually be able to:
+
+* Add and edit educational resources.
+
+* Upload PDFs.
+
+* Add lecture URLs.
+
+* Publish announcements.
+
+* Update admission information.
+
+* Add university links.
+
+* Manage test questions.
+
+* Review registration submissions.
+
+* Mark notifications as verified.
+
+* Archive outdated information.
+
+Do not create an insecure fake admin panel. If a dashboard is included, protect it with real authentication and server-side authorization. Never expose administrative credentials in the frontend.
+
+If backend implementation is beyond the available environment, create a maintainable frontend architecture and document the required API endpoints and data schema for future integration.
+
+## 24. TECHNICAL STACK AND PROJECT STRUCTURE
+
+Use a modern, maintainable stack compatible with Google AI Studio.
+
+Preferred technologies:
+
+* React.
+
+* TypeScript.
+
+* Vite.
+
+* CSS modules or well-organized modern CSS.
+
+* Lucide React icons.
+
+* React Router for multi-page navigation if needed.
+
+Use the supported framework already present in the environment if a different stack is required.
+
+Suggested project structure:
+
+`src/components/`
+
+* Header
+
+* MobileNavigation
+
+* HeroSection
+
+* QuickAccess
+
+* AboutAcademy
+
+* ClassesSection
+
+* LectureSection
+
+* TestSeries
+
+* ResourceLibrary
+
+* UniversityPortal
+
+* UpdatesSection
+
+* RegistrationForm
+
+* SocialLinks
+
+* NewsletterForm
+
+* Footer
+
+`src/pages/`
+
+* Home
+
+* About
+
+* Registration
+
+* ClassDetail
+
+* Lectures
+
+* TestSeries
+
+* Notes
+
+* GuessPapers
+
+* PastPapers
+
+* UniversityPortal
+
+* EntryTests
+
+* MeritLists
+
+* Updates
+
+* Contact
+
+* PrivacyPolicy
+
+* Disclaimer
+
+`src/data/`
+
+* classes
+
+* subjects
+
+* resources
+
+* lectures
+
+* tests
+
+* announcements
+
+* universities
+
+* socialLinks
+
+* siteConfig
+
+`src/assets/`
+
+* academy-logo
+
+* optimized illustrations
+
+* local images
+
+`public/`
+
+* images
+
+* favicon
+
+* robots.txt
+
+* sitemap.xml where appropriate
+
+Build reusable components instead of duplicating the same markup across pages.
+
+Keep the academy name, logo path, contact information, social links, and brand colors centralized.
+
+## 25. PERFORMANCE, ACCESSIBILITY, AND SEO
+
+### Performance
+
+* Optimize and compress images.
+
+* Prefer WebP or AVIF where appropriate.
+
+* Lazy-load below-the-fold imagery.
+
+* Prioritize the hero image.
+
+* Minimize unnecessary dependencies.
+
+* Prevent layout shifts.
+
+* Avoid large, unnecessary animation libraries.
+
+* Keep the site responsive on low-end mobile devices.
+
+### Accessibility
+
+* Use semantic HTML.
+
+* Provide accessible labels.
+
+* Maintain adequate color contrast.
+
+* Support keyboard navigation.
+
+* Include visible focus states.
+
+* Use accessible dropdowns and dialogs.
+
+* Provide alt text for meaningful images.
+
+* Use proper form validation messages.
+
+* Respect reduced-motion preferences.
+
+* Ensure interactive controls have sufficiently large touch targets.
+
+### SEO
+
+* Homepage title: “Akbar Study Smart Academy | FBISE Classes 9–12 Preparation”
+
+* Write a clear meta description.
+
+* Use one main H1 per page.
+
+* Create descriptive page titles and URLs.
+
+* Include Open Graph metadata.
+
+* Add the uploaded academy logo or an appropriate brand image to social metadata.
+
+* Generate a favicon.
+
+* Add a sitemap and robots.txt as appropriate.
+
+* Use structured data only when accurate and suitable.
+
+* Avoid keyword stuffing.
+
+* Use descriptive internal links between classes, notes, tests, and updates.
+
+## 26. HOSTINGER DEPLOYMENT REQUIREMENTS
+
+Prepare the project for reliable deployment on Hostinger.
+
+For a Vite-based project:
+
+* Include a valid `package.json`.
+
+* Include all necessary dependencies.
+
+* Include a working development command.
+
+* Include a production build command.
+
+* Generate the production site in `dist/`.
+
+* Include all required assets.
+
+* Ensure internal routes resolve correctly.
+
+* Configure client-side routing fallbacks where necessary for Apache hosting.
+
+* Include a suitable `.htaccess` file when required by the chosen hosting configuration.
+
+* Ensure image and asset paths work in production.
+
+* Avoid relying on a development server for production functionality.
+
+Create a `README.md` with clear instructions for:
+
+1. Installing dependencies.
+
+2. Running the project locally.
+
+3. Creating the production build.
+
+4. Locating the generated production files.
+
+5. Uploading the build to Hostinger.
+
+6. Connecting the domain and enabling HTTPS.
+
+7. Replacing or updating the logo and images.
+
+8. Adding class resources and lecture links.
+
+9. Configuring a database and registration endpoint.
+
+10. Activating the newsletter service.
+
+11. Setting up any optional administrator dashboard.
+
+Do not include real API keys, passwords, or other secrets in the repository.
+
+## 27. FINAL QUALITY ASSURANCE
+
+Before declaring the project complete, verify all of the following.
+
+### Visual
+
+* The uploaded logo is integrated correctly.
+
+* The design uses consistent blue, gold, and white branding.
+
+* The homepage has a clear and attractive hero section.
+
+* Class cards are aligned and responsive.
+
+* Study resources are easy to find.
+
+* News and notification sections are organized.
+
+* Social media links are prominent.
+
+* The footer is complete.
+
+* The overall appearance is premium, trustworthy, and appropriate for Pakistani students.
+
+### Functional
+
+* Navigation works.
+
+* Dropdowns work on desktop and mobile.
+
+* Class pages open correctly.
+
+* Resource filters work.
+
+* Search works.
+
+* Test questions can be answered and scored.
+
+* Registration validation works.
+
+* External social links are correct.
+
+* Forms show honest submission states.
+
+* No buttons are decorative without a purpose.
+
+* No fake PDF downloads exist.
+
+* No unverified official announcements are presented as facts.
+
+### Responsive
+
+Test viewport widths of 320px, 375px, 430px, 768px, 1024px, 1280px, and 1440px.
+
+Fix:
+
+* Horizontal overflow.
+
+* Clipped text.
+
+* Overlapping buttons.
+
+* Broken grids.
+
+* Inaccessible menus.
+
+* Improper image crops.
+
+* Excessive mobile spacing.
+
+* Tiny touch targets.
+
+### Production
+
+* The application builds successfully.
+
+* Imports resolve correctly.
+
+* There are no critical console errors.
+
+* Assets load correctly.
+
+* Routes work after refresh.
+
+* Forms do not falsely claim success.
+
+* The project includes deployment instructions.
+
+* All sample contact details and unverified content are clearly identified for review.
+
+## FINAL EXECUTION COMMAND
+
+Now build the complete Akbar Study Smart Academy website in the available Google AI Studio environment.
+
+Use the uploaded logo as the actual brand asset. Implement every core section and page, create the design system, generate or integrate appropriate high-quality images, make navigation and resource discovery functional, build the interactive MCQ testing experience, implement the registration form with honest backend integration states, include all supplied social media URLs, and prepare the project for Hostinger deployment.
+
+Do not stop at the homepage hero. Do not return only a design description. Do not leave empty image boxes, broken links, fake functionality, or unimplemented core pages.
+
+Prioritize a complete working website, then refine the visual details and responsive behavior.
+
+The final deliverable must be an original, modern, fully responsive, maintainable educational platform that helps students access classes, lectures, notes, MCQs, test series, guess papers, past papers, official updates, university admissions, entry-test resources, and merit-list information in one organized place.
+
+**Build the actual website project, verify it, and make it ready for deployment—not just a visual prototype.**

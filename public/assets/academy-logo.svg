@@ -1,0 +1,150 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 380" width="100%" height="100%">
+  <defs>
+    <!-- Gradients -->
+    <linearGradient id="capGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1E4D8C" />
+      <stop offset="50%" stop-color="#123B70" />
+      <stop offset="100%" stop-color="#0B2348" />
+    </linearGradient>
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFDE6A" />
+      <stop offset="35%" stop-color="#F2B632" />
+      <stop offset="70%" stop-color="#E89B19" />
+      <stop offset="100%" stop-color="#D4860D" />
+    </linearGradient>
+    <linearGradient id="orangeGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFA439" />
+      <stop offset="100%" stop-color="#E87612" />
+    </linearGradient>
+    <linearGradient id="blueAccent" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#3A94DF" />
+      <stop offset="100%" stop-color="#1A5B9C" />
+    </linearGradient>
+    <linearGradient id="bookPage" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF" />
+      <stop offset="100%" stop-color="#EAF1F8" />
+    </linearGradient>
+    <filter id="subtleShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="4" stdDeviation="4" flood-color="#0B2348" flood-opacity="0.15" />
+    </filter>
+    <filter id="bannerShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#0B2348" flood-opacity="0.25" />
+    </filter>
+  </defs>
+
+  <!-- BACKGROUND EMBLEM SHIELD / GLOW (Subtle) -->
+  <g id="shield-crest" opacity="0.95">
+    <!-- Outer Decorative Arch Laurel / Wings Left -->
+    <path d="M 140 180 C 120 150 115 105 155 75 C 150 95 160 120 180 135 C 160 125 145 105 150 85 C 130 115 135 150 155 170 Z" fill="url(#orangeGrad)" />
+    <path d="M 125 195 C 100 165 95 120 135 85 C 130 105 140 135 165 150 C 142 140 125 115 130 95 C 110 130 115 165 135 185 Z" fill="url(#blueAccent)" />
+    
+    <!-- Outer Decorative Arch Laurel / Wings Right -->
+    <path d="M 360 180 C 380 150 385 105 345 75 C 350 95 340 120 320 135 C 340 125 355 105 350 85 C 370 115 365 150 345 170 Z" fill="url(#orangeGrad)" />
+    <path d="M 375 195 C 400 165 405 120 365 85 C 370 105 360 135 335 150 C 358 140 375 115 370 95 C 390 130 385 165 365 185 Z" fill="url(#blueAccent)" />
+  </g>
+
+  <!-- GRADUATION CAP & BOOK GROUP -->
+  <g id="cap-and-book" filter="url(#subtleShadow)">
+    <!-- OPEN BOOK (Base) -->
+    <g id="open-book" transform="translate(0, 10)">
+      <!-- Left Page Shadow/Backing -->
+      <path d="M 250 175 Q 200 150 150 160 L 150 205 Q 200 195 250 220 Z" fill="#D3E0EE" />
+      <!-- Right Page Shadow/Backing -->
+      <path d="M 250 175 Q 300 150 350 160 L 350 205 Q 300 195 250 220 Z" fill="#C5D5E6" />
+      
+      <!-- Left Page Main -->
+      <path d="M 250 172 Q 205 147 155 157 L 155 198 Q 205 188 250 214 Z" fill="url(#bookPage)" stroke="#123B70" stroke-width="2.5" stroke-linejoin="round" />
+      <!-- Right Page Main -->
+      <path d="M 250 172 Q 295 147 345 157 L 345 198 Q 295 188 250 214 Z" fill="url(#bookPage)" stroke="#123B70" stroke-width="2.5" stroke-linejoin="round" />
+      
+      <!-- Book Spine Center Binding -->
+      <path d="M 248 172 L 248 216 Q 250 218 252 216 L 252 172 Z" fill="#0B2348" />
+
+      <!-- Left Page Text/Lines (Symbolic Study Notes) -->
+      <line x1="175" y1="168" x2="235" y2="162" stroke="#2166A5" stroke-width="2.5" stroke-linecap="round" opacity="0.6" />
+      <line x1="172" y1="178" x2="235" y2="172" stroke="#2166A5" stroke-width="2.5" stroke-linecap="round" opacity="0.6" />
+      <line x1="175" y1="188" x2="225" y2="182" stroke="#2166A5" stroke-width="2.5" stroke-linecap="round" opacity="0.6" />
+
+      <!-- Right Page Text/Lines (Symbolic Study Notes) -->
+      <line x1="265" y1="162" x2="325" y2="168" stroke="#2166A5" stroke-width="2.5" stroke-linecap="round" opacity="0.6" />
+      <line x1="265" y1="172" x2="328" y2="178" stroke="#2166A5" stroke-width="2.5" stroke-linecap="round" opacity="0.6" />
+      <line x1="275" y1="182" x2="325" y2="188" stroke="#2166A5" stroke-width="2.5" stroke-linecap="round" opacity="0.6" />
+    </g>
+
+    <!-- GRADUATION CAP (Mortarboard) -->
+    <g id="mortarboard" transform="translate(0, -5)">
+      <!-- Cap Base / Skullcap -->
+      <path d="M 215 110 C 215 130 285 130 285 110 C 285 98 215 98 215 110 Z" fill="#0B2348" />
+      <path d="M 215 106 Q 250 126 285 106 L 285 116 Q 250 136 215 116 Z" fill="#071730" />
+
+      <!-- Diamond Rhombus Board Top -->
+      <polygon points="250,55 355,95 250,135 145,95" fill="url(#capGrad)" stroke="#FFDE6A" stroke-width="1.8" />
+      
+      <!-- Top Center Button -->
+      <circle cx="250" cy="95" r="5" fill="#F2B632" stroke="#0B2348" stroke-width="1.5" />
+      
+      <!-- Golden Tassel String & Pendant -->
+      <path d="M 250 95 Q 295 100 310 120 Q 320 135 322 155" fill="none" stroke="#F2B632" stroke-width="3" stroke-linecap="round" />
+      <!-- Tassel Fringe Ribbon -->
+      <polygon points="317,152 327,152 329,170 315,170" fill="url(#goldGrad)" stroke="#B87508" stroke-width="0.8" />
+      <line x1="319" y1="170" x2="319" y2="176" stroke="#D4860D" stroke-width="1.5" />
+      <line x1="323" y1="170" x2="323" y2="177" stroke="#D4860D" stroke-width="1.5" />
+      <line x1="326" y1="170" x2="326" y2="175" stroke="#D4860D" stroke-width="1.5" />
+    </g>
+  </g>
+
+  <!-- "AKBAR" WORDMARK -->
+  <text x="250" y="278" 
+        font-family="'Times New Roman', 'Cinzel', 'Playfair Display', Georgia, serif" 
+        font-size="64" 
+        font-weight="900" 
+        letter-spacing="5" 
+        text-anchor="middle" 
+        fill="#0B2348"
+        style="text-transform: uppercase;">
+    AKBAR
+  </text>
+  
+  <!-- Subtle Gold Underline for AKBAR -->
+  <circle cx="160" cy="288" r="3" fill="#E88724" />
+  <line x1="170" y1="288" x2="240" y2="288" stroke="#F2B632" stroke-width="2.5" stroke-linecap="round" />
+  <circle cx="250" cy="288" r="4.5" fill="#F2B632" stroke="#0B2348" stroke-width="1.5" />
+  <line x1="260" y1="288" x2="330" y2="288" stroke="#F2B632" stroke-width="2.5" stroke-linecap="round" />
+  <circle cx="340" cy="288" r="3" fill="#E88724" />
+
+  <!-- GOLD RIBBON BANNER: "STUDY SMART ACADEMY" -->
+  <g id="gold-banner" filter="url(#bannerShadow)" transform="translate(0, 5)">
+    <!-- Ribbon Left Tail Fold -->
+    <path d="M 75 330 L 105 315 L 105 345 L 75 360 L 90 345 Z" fill="#C67D0B" stroke="#8E5704" stroke-width="1.2" />
+    <polygon points="105,345 105,320 120,335" fill="#995E04" />
+    
+    <!-- Ribbon Right Tail Fold -->
+    <path d="M 425 330 L 395 315 L 395 345 L 425 360 L 410 345 Z" fill="#C67D0B" stroke="#8E5704" stroke-width="1.2" />
+    <polygon points="395,345 395,320 380,335" fill="#995E04" />
+
+    <!-- Main Front Banner Body -->
+    <path d="M 100 318 C 175 308 325 308 400 318 C 404 319 406 323 404 327 L 395 354 C 325 344 175 344 105 354 C 101 354 98 350 100 346 L 100 318 Z" 
+          fill="url(#goldGrad)" 
+          stroke="#B87508" 
+          stroke-width="2" />
+    
+    <!-- Banner Inner Gold Border Accent -->
+    <path d="M 108 323 C 178 314 322 314 392 323 L 387 348 C 320 339 180 339 113 348 Z" 
+          fill="none" 
+          stroke="#FFF2B2" 
+          stroke-width="1.2" 
+          opacity="0.8" />
+
+    <!-- "STUDY SMART ACADEMY" TEXT -->
+    <text x="250" y="340" 
+          font-family="'Plus Jakarta Sans', 'Segoe UI', Arial, sans-serif" 
+          font-size="19" 
+          font-weight="800" 
+          letter-spacing="2.5" 
+          text-anchor="middle" 
+          fill="#0B2348"
+          style="text-transform: uppercase;">
+      STUDY SMART ACADEMY
+    </text>
+  </g>
+</svg>

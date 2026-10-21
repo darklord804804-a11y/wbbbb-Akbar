@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="100%" height="100%">
+  <defs>
+    <linearGradient id="favCap" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2F80C3" />
+      <stop offset="50%" stop-color="#123B70" />
+      <stop offset="100%" stop-color="#0B2348" />
+    </linearGradient>
+    <linearGradient id="favGold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFDE6A" />
+      <stop offset="100%" stop-color="#E88724" />
+    </linearGradient>
+  </defs>
+  <rect width="128" height="128" rx="28" fill="#0B2348" />
+  <!-- Book base -->
+  <path d="M 64 88 Q 45 74 24 80 L 24 104 Q 45 98 64 112 Q 83 98 104 104 L 104 80 Q 83 74 64 88 Z" fill="#F1F6FC" stroke="#F2B632" stroke-width="2.5" />
+  <line x1="64" y1="88" x2="64" y2="112" stroke="#123B70" stroke-width="2.5" />
+  <!-- Mortarboard -->
+  <polygon points="64,24 116,46 64,68 12,46" fill="url(#favCap)" stroke="#F2B632" stroke-width="3" />
+  <!-- Skullcap -->
+  <path d="M 46 54 C 46 66 82 66 82 54" fill="#071730" />
+  <!-- Center button -->
+  <circle cx="64" cy="46" r="4.5" fill="#F2B632" />
+  <!-- Tassel -->
+  <path d="M 64 46 Q 92 50 98 68" fill="none" stroke="url(#favGold)" stroke-width="3" stroke-linecap="round" />
+  <polygon points="95,68 101,68 103,78 93,78" fill="#F2B632" />
+</svg>

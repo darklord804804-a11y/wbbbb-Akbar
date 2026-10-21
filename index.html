@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <script>
+      // Compatibility guard for browser extensions that patch window.fetch
+      (function() {
+        try {
+          var originalFetch = window.fetch;
+          var currentFetch = originalFetch;
+          Object.defineProperty(window, 'fetch', {
+            get: function() {
+              return currentFetch;
+            },
+            set: function(val) {
+              currentFetch = val;
+            },
+            configurable: true,
+            enumerable: true
+          });
+        } catch (e) {
+          // Non-blocking fallback
+        }
+
+        // Suppress benign third-party browser extension injection crashes
+        window.addEventListener('error', function(event) {
+          if (event.filename && (event.filename.indexOf('chrome-extension://') !== -1 || event.filename.indexOf('moz-extension://') !== -1)) {
+            event.preventDefault();
+            return true;
+          }
+        });
+        window.addEventListener('unhandledrejection', function(event) {
+          if (event.reason && event.reason.stack && event.reason.stack.indexOf('chrome-extension://') !== -1) {
+            event.preventDefault();
+          }
+        });
+      })();
+    </script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Akbar Study Smart Academy | FBISE Classes 9–12 Preparation</title>
+    <meta name="description" content="Comprehensive FBISE Classes 9-12 and university entry test preparation platform featuring exam-focused notes, MCQs, video lectures, test series, guess papers, and official board updates." />
+    
+    <!-- Open Graph / Social Media Meta -->
+    <meta property="og:title" content="Akbar Study Smart Academy | FBISE Classes 9–12 Preparation" />
+    <meta property="og:description" content="Comprehensive FBISE Classes 9-12 and university entry test preparation platform featuring exam-focused notes, MCQs, video lectures, test series, guess papers, and official board updates." />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Akbar Study Smart Academy" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Akbar Study Smart Academy | FBISE Classes 9–12 Preparation" />
+    <meta name="twitter:description" content="Exam-focused notes, lectures, MCQs, guess papers, and admission updates for FBISE students." />
+    
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Outfit:wght@500;600;700;800&family=Noto+Nastaliq+Urdu:wght@400;700&display=swap" rel="stylesheet">
+  </head>
+  <body class="bg-[#F8FAFC] text-[#172235] font-sans antialiased selection:bg-[#F2B632]/30 selection:text-[#0B2348]">
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
