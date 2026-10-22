@@ -223,10 +223,10 @@ Please verify my payment and confirm my registration. Thank you.`;
     }
   };
 
-  // Admin Pin Check
+  // Admin Pin Check (Passcode: 2345)
   const handleAdminLogin = (e: React.FormEvent) => {
     e.preventDefault();
-    if (adminPin === '2026' || adminPin === 'admin' || adminPin === 'akbar') {
+    if (adminPin.trim() === '2345') {
       setIsAdminUnlocked(true);
       setAdminPinError(false);
     } else {
@@ -1024,34 +1024,58 @@ Please verify my payment and confirm my registration. Thank you.`
                 </div>
               </div>
 
-              <span className="text-xs font-mono bg-blue-50 text-[#123B70] px-3 py-1 rounded-full border border-blue-200 font-bold">
-                {savedClaims.length} Claim{savedClaims.length !== 1 ? 's' : ''} Stored
-              </span>
+              <div className="flex items-center gap-2">
+                <span className="text-xs font-mono bg-blue-50 text-[#123B70] px-3 py-1 rounded-full border border-blue-200 font-bold">
+                  {savedClaims.length} Claim{savedClaims.length !== 1 ? 's' : ''} Stored
+                </span>
+                {isAdminUnlocked && (
+                  <button
+                    type="button"
+                    onClick={() => {
+                      setIsAdminUnlocked(false);
+                      setAdminPin('');
+                    }}
+                    className="text-xs font-bold px-3 py-1 bg-red-50 hover:bg-red-100 text-red-700 border border-red-200 rounded-lg cursor-pointer transition-colors"
+                  >
+                    Lock Panel
+                  </button>
+                )}
+              </div>
             </div>
 
             {!isAdminUnlocked ? (
               <form onSubmit={handleAdminLogin} className="max-w-md mx-auto py-6 text-center space-y-4">
-                <p className="text-xs text-[#475569]">
-                  Please enter the staff passcode to view and manage student payment claims (Default demo passcode: <strong>2026</strong> or <strong>admin</strong>).
-                </p>
-                <div className="flex gap-2 justify-center">
+                <div className="w-12 h-12 rounded-2xl bg-amber-50 border border-amber-200 text-amber-600 mx-auto flex items-center justify-center">
+                  <Lock className="w-6 h-6" />
+                </div>
+                <div>
+                  <h5 className="font-bold text-sm text-[#0B2348]">Authorized Admin / Staff Access Only</h5>
+                  <p className="text-xs text-[#64748B] mt-1">
+                    Enter the confidential academy staff passcode (PIN) to access and verify student fee submissions.
+                  </p>
+                </div>
+                <div className="flex gap-2 justify-center max-w-xs mx-auto">
                   <input
                     type="password"
-                    placeholder="Staff Passcode"
+                    placeholder="Enter PIN"
                     value={adminPin}
-                    onChange={(e) => setAdminPin(e.target.value)}
-                    className="px-4 py-2 rounded-xl border border-[#CBD5E1] text-sm focus:outline-none focus:border-[#123B70]"
+                    onChange={(e) => {
+                      setAdminPin(e.target.value);
+                      if (adminPinError) setAdminPinError(false);
+                    }}
+                    maxLength={10}
+                    className="px-4 py-2.5 rounded-xl border border-[#CBD5E1] text-sm text-center font-mono tracking-widest focus:outline-none focus:border-[#123B70] w-full"
                   />
                   <button
                     type="submit"
-                    className="px-4 py-2 rounded-xl bg-[#123B70] text-white text-xs font-bold hover:bg-[#0B2348] cursor-pointer"
+                    className="px-5 py-2.5 rounded-xl bg-[#123B70] text-white text-xs font-bold hover:bg-[#0B2348] cursor-pointer shrink-0 transition-colors"
                   >
-                    Unlock Panel
+                    Unlock
                   </button>
                 </div>
                 {adminPinError && (
-                  <p className="text-xs text-red-600 font-bold">
-                    Incorrect passcode. Try 2026.
+                  <p className="text-xs text-red-600 font-bold flex items-center justify-center gap-1">
+                    <span>⚠</span> Incorrect passcode. Access restricted to authorized academy staff.
                   </p>
                 )}
               </form>

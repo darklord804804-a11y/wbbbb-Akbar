@@ -52,7 +52,17 @@ export default function App() {
   };
 
   return (
-    <div className="min-h-screen flex flex-col bg-[#F8FAFC] text-[#172235]">
+    <div className="min-h-screen flex flex-col bg-[#F8FAFC] text-[#172235] relative overflow-x-hidden">
+      {/* Global Subtle Academy Background Watermark (Single, Centered, Diagonal) */}
+      <div 
+        aria-hidden="true" 
+        className="site-watermark-layer"
+      >
+        <span className="site-watermark-text">
+          Akbar Study Smart Academy
+        </span>
+      </div>
+
       {/* Global Header */}
       <Header
         activePage={activePage}

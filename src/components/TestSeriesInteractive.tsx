@@ -170,6 +170,7 @@ export const TestSeriesInteractive: React.FC<TestSeriesProps> = ({ onNavigate })
                 { id: 'class-9', label: 'Class 9' },
                 { id: 'class-10', label: 'Class 10' },
                 { id: 'class-11', label: 'Class 11 (1st Year)' },
+                { id: 'class-12', label: 'Class 12' },
                 { id: 'entry-test', label: 'Entry Test (NET / MDCAT)' },
               ].map((btn) => (
                 <button
@@ -427,8 +428,9 @@ export const TestSeriesInteractive: React.FC<TestSeriesProps> = ({ onNavigate })
               {/* Big Score Display */}
               <div className="flex flex-col sm:flex-row items-center justify-center gap-6 py-4">
                 <div className="w-32 h-32 rounded-full border-8 border-[#123B70] flex flex-col items-center justify-center shadow-inner">
-                  <span className="text-3xl font-black text-[#0B2348]">{scorePercentage}%</span>
-                  <span className="text-[10px] font-bold text-[#637083] uppercase">Aggregate</span>
+                  <span className="text-2xl font-black text-[#0B2348]">{correctCount}/{totalQuestions}</span>
+                  <span className="text-xs font-bold text-[#123B70]">{scorePercentage}%</span>
+                  <span className="text-[9px] font-bold text-[#637083] uppercase tracking-wider">Score</span>
                 </div>
 
                 <div className="text-left space-y-2">
